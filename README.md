@@ -1,17 +1,43 @@
-# ddri_web
+# DDRI Web — 서울 공공자전거 데이터 서비스
 
-A new Flutter project.
+Flutter 기반 웹 프로젝트로, 서울 공공자전거 관련 데이터와 분석 결과를 서비스 화면에서 활용하기 위한 팀 프로젝트입니다. 저장소에는 API 검증 노트북, 데이터 확인 산출물, 서비스 설계 문서가 함께 포함되어 있습니다.
 
-## Getting Started
+## 프로젝트 개요
 
-This project is a starting point for a Flutter application.
+공공자전거 대여소 데이터를 확인하고 서비스에 필요한 데이터·API 흐름을 정리하는 프로젝트입니다. 실제 화면 기능과 API 연결 상태는 코드 및 실행 환경에 따라 달라질 수 있습니다.
 
-A few resources to get you started if this is your first Flutter project:
+## 저장소 구성
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- `lib/` — Flutter 화면 및 애플리케이션 코드
+- `cheng80/` — API 검증 노트북, 모델 실행 준비 자료 및 데이터 점검 산출물
+- `docs/00_overview/` — 프로젝트 마스터 플랜
+- `docs/02_web_service_final/` — 화면 범위, 시스템 설계, API 계약, DB 설계 및 ERD
+- `CURSOR.md` — 개발 관련 프로젝트 메모
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 기술 스택
+
+- Flutter / Dart
+- Python 및 Jupyter Notebook 기반 데이터 검증·분석 자료
+- 공공자전거 API 관련 데이터
+- 서비스 설계 문서에 정의된 웹/API 구조
+
+특정 상태 관리 라이브러리나 실제 백엔드 구동 방식은 의존성 파일과 코드에서 확인한 후 별도로 명시하는 것이 좋습니다.
+
+## 실행 방법
+
+Flutter SDK가 설치된 환경에서 프로젝트 루트에서 실행합니다.
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+API 또는 백엔드 연결이 필요한 경우 관련 설계 문서와 환경 설정을 먼저 확인하세요. 로컬 경로와 개인별 인증 정보를 공개 README에 기재하지 마세요.
+
+## 데이터 및 API 검증 자료
+
+`cheng80/`에는 API 검증 및 데이터 점검 관련 노트북·CSV가 포함되어 있습니다. 분석 결과를 재현할 때는 해당 자료의 입력 데이터, API 사용 조건, 실행 순서를 확인해야 합니다.
+
+## 상태
+
+학습 및 팀 프로젝트 저장소입니다. 실제 운영 환경의 가용성이나 데이터 최신성은 별도 검증이 필요합니다.
